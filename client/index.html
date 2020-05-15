@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL</title>
+
+    <style>
+        #user-choice {
+            text-align: center;
+        }
+        #response-values {
+            text-align: center;
+        }
+        .player-card {
+            margin: 0.5em 1em;
+            width: 50vh;
+            margin: 0.2em auto;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .player-card > span {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="user-choice">
+        <label for="player-name">Enter Player Name:</label>
+        <input type="text" name="player-name" id="player-name">
+        <select name="player-type" id="player-type">
+            <option value="bat">Batsman</option>
+            <option value="bowl">Bowler</option>
+            <option value="all">Allrounder</option>
+            <option value="wk">Wicket Keeper</option>
+        </select>
+    </div>
+    <div id="response-values"></div>
+
+
+    <script src="public/js/getPlayerNames.js"></script>
+</body>
+</html>
